@@ -56,7 +56,7 @@ export default {
       base('page').select({
           maxRecords: 20,
           view: 'Grid view',
-          filterByFormula: "({Page} = 1)"
+          filterByFormula: `({Page} = ${page})`
       }).firstPage((err, records) => {
           if (err) { console.error(err); return; }
           records.forEach((record) => {
@@ -70,7 +70,7 @@ export default {
       base('evenement').select({
           maxRecords: 20,
           view: 'Grid view',
-          filterByFormula: "({Page} = 1)"
+          filterByFormula: `({Page} = ${page})`
       }).firstPage((err, records) => {
           if (err) { console.error(err); return; }
           records.forEach((record) => {
@@ -81,7 +81,7 @@ export default {
       base('lien').select({
           maxRecords: 20,
           view: 'Grid view',
-          filterByFormula: "({Page} = 1)"
+          filterByFormula: `({Page} = ${page})`
       }).firstPage((err, records) => {
           if (err) { console.error(err); return; }
           records.forEach((record) => {
