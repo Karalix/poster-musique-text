@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "poster-musique-texte",
+    "public": "poster-musique-text/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
